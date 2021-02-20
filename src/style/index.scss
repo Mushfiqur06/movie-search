@@ -1,0 +1,39 @@
+@import './../assets/fonts/stylesheet.css';
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+:root {
+	--primary: #ed2517;
+	--secondary: #289544;
+	--error: #f44336;
+	--bg-default: #fff;
+	--text-primary: #0b0303;
+	--text-body: #0b0303;
+	--text-muted: rgba(74, 70, 109, 0.54);
+	--text-hint: rgba(74, 70, 109, 0.38);
+	--font: 'SF Pro Display', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100vh;
+}
+
+body {
+	background-color: var(--bg-default);
+	min-height: 100%;
+	font-size: 16px;
+	font-family: var(--font);
+	line-height: 1.5;
+	color: var(--text-body);
+	text-rendering: optimizelegibility;
+}
+button {
+	&:focus {
+		outline: none;
+	}
+}
