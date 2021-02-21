@@ -1,5 +1,7 @@
 @import './../assets/fonts/stylesheet.css';
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import './common.scss';
+@import './header.scss';
 
 :root {
 	--primary: #ed2517;
@@ -13,7 +15,10 @@
 	--font: 'SF Pro Display', sans-serif;
 }
 
-*,
+* {
+	margin: 0;
+	padding: 0;
+}
 *::before,
 *::after {
 	box-sizing: border-box;

@@ -1,0 +1,23 @@
+.header {
+	&_row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		height: 70px;
+		&__left {
+			display: flex;
+			align-items: center;
+			flex-direction: row;
+			.logo {
+				margin-right: 20px;
+			}
+			.menu {
+				display: flex;
+				li {
+					margin-right: 15px;
+				}
+			}
+		}
+	}
+}

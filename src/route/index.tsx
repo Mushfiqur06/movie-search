@@ -6,6 +6,7 @@ import { AuthRoute } from './UnauthenticatedApp';
 import { PrivateRoute } from './AuthanticatedApp';
 import Login from '../module/auth/containers/Login';
 import { AppConatiner } from '../module/core/App';
+import Dashboard from '../module/dashboard/container';
 
 function hello() {
 	let some = 'ddfdf';
@@ -14,9 +15,9 @@ class App extends Component {
 	render() {
 		return (
 			<Switch>
-				<PrivateRoute path="/db" component={AppConatiner} />
+				<PrivateRoute path="/profile" component={AppConatiner} />
 				<AuthRoute path="/auth/login" component={() => <Login />} />
-				<Route render={() => <Redirect to="/db" />} />
+				<Route path="/dashboard" component={Dashboard} />
 			</Switch>
 		);
 	}

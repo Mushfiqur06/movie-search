@@ -5,7 +5,7 @@ import { userInLoggedIn } from '../utils/authentication';
 export class AuthRoute extends React.Component<any> {
 	render() {
 		return userInLoggedIn() ? (
-			<Redirect to={{ pathname: '/db' }} />
+			<Redirect to={{ pathname: '/profile' }} />
 		) : (
 			<Switch>
 				<Route
