@@ -17,7 +17,7 @@ class App extends Component {
 			<Switch>
 				<PrivateRoute path="/profile" component={AppConatiner} />
 				<AuthRoute path="/auth/login" component={() => <Login />} />
-				<Route path="/dashboard" component={Dashboard} />
+				<Route path="/" component={Dashboard} />
 			</Switch>
 		);
 	}

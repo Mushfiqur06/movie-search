@@ -12,7 +12,7 @@ export function PrivateRoute({ component: Component, ...rest }: any) {
 				) : (
 					<Redirect
 						to={{
-							pathname: '/dashboard',
+							pathname: '/',
 						}}
 					/>
 				)
