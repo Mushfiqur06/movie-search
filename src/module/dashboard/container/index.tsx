@@ -1,4 +1,5 @@
 import React from 'react';
+import Layout from '../../common/Layout';
 import Header from '../../core/Header';
 import Slider from '../../slider/container';
 import Movies from '../components/Movies';
@@ -6,9 +7,10 @@ import Movies from '../components/Movies';
 export default function Dashboard() {
 	return (
 		<>
-			<Header />
-			<Slider />
-			<Movies />
+			<Layout>
+				<Slider />
+				<Movies />
+			</Layout>
 		</>
 	);
 }
