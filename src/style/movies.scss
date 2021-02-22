@@ -1,14 +1,26 @@
 .movies {
+	margin-top: 50px;
 	&_row {
 		display: flex;
 		&__col {
 			flex: 1;
 			width: 16%;
-			margin-right: 2px;
+			margin-right: 4px;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+			}
 
 			&:last-child {
 				margin-right: 0;
 			}
 		}
+	}
+	.movies_title {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
 	}
 }

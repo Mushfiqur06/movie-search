@@ -7,6 +7,7 @@ import { PrivateRoute } from './AuthanticatedApp';
 import Login from '../module/auth/containers/Login';
 import { AppConatiner } from '../module/core/App';
 import Dashboard from '../module/dashboard/container';
+import Movies from '../module/dashboard/components/Movies';
 
 function hello() {
 	let some = 'ddfdf';
@@ -17,7 +18,8 @@ class App extends Component {
 			<Switch>
 				<PrivateRoute path="/profile" component={AppConatiner} />
 				<AuthRoute path="/auth/login" component={() => <Login />} />
-				<Route path="/" component={Dashboard} />
+				<Route exact path="/" component={Dashboard} />
+				<Route path="/movies" component={Movies} />
 			</Switch>
 		);
 	}
