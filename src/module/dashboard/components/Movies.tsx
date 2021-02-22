@@ -20,7 +20,7 @@ function Movies(props: any) {
 							<p onClick={() => history.push('/movies')}>See All</p>
 						</div>
 					</div>
-					<div className="movies_row">
+					{/* <div className="movies_row">
 						{props.movies[0] &&
 							props.movies[0].Search.map((item: any, index: number) => {
 								return (
@@ -29,6 +29,18 @@ function Movies(props: any) {
 									</div>
 								);
 							})}
+					</div> */}
+					<div className="movies_row">
+						{props.movies[0] &&
+							props.movies[0].Search.slice(0, 6).map(
+								(item: any, index: number) => {
+									return (
+										<div key={index} className="movies_row__col">
+											<img src={item.Poster} />
+										</div>
+									);
+								}
+							)}
 					</div>
 				</div>
 			</div>

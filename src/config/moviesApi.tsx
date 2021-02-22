@@ -1,1 +1,5 @@
-export const allMoviesApi = 'http://www.omdbapi.com/?s=marvel&apikey=1bb58154';
+const MAIN_URL = process.env.REACT_APP_MOVIES;
+
+export const baseUrl = {
+	API_ENDPOINT: `${MAIN_URL}`,
+};

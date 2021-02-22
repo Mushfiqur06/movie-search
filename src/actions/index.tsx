@@ -1,10 +1,10 @@
 import axios from 'axios';
-import { allMoviesApi } from '../config/moviesApi';
+import { baseUrl } from '../config/moviesApi';
 import { ADD_ALL_MOVIES } from './movie-action-type';
 
 export function fetchMovies() {
 	return function (dispatch: any) {
-		return axios.get(allMoviesApi).then(({ data }) => {
+		return axios.get(baseUrl.API_ENDPOINT).then(({ data }) => {
 			dispatch(addAllMovies(data));
 		});
 	};

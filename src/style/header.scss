@@ -19,5 +19,18 @@
 				}
 			}
 		}
+
+		&__right {
+			display: flex;
+			align-items: center;
+
+			.login_area {
+				margin-left: 20px;
+				background-color: green;
+				color: white;
+				padding: 10px 14px;
+				border-radius: 5px;
+			}
+		}
 	}
 }
