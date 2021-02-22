@@ -24,13 +24,7 @@ function dispatchUserdataFromToken(decodedToken: any) {
 	store.dispatch({ type: AUTH_USER_DATE_FROM_TOKEN, payload: decodedToken });
 }
 
-export async function loginAction({
-	name,
-	pass,
-}: {
-	name: string;
-	pass: string;
-}) {
+export async function loginAction(name: string, pass: string) {
 	try {
 		const userName = 'admin';
 		const password = 'admin';
