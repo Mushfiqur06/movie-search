@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { fetchMovies } from '../../../actions';
+import { Imovie } from '../constants/interface';
 
 function Movies(props: any) {
 	const history = useHistory();
@@ -20,20 +21,10 @@ function Movies(props: any) {
 							<p onClick={() => history.push('/movies')}>See All</p>
 						</div>
 					</div>
-					{/* <div className="movies_row">
-						{props.movies[0] &&
-							props.movies[0].Search.map((item: any, index: number) => {
-								return (
-									<div key={index} className="movies_row__col">
-										<img src={item.Poster} />
-									</div>
-								);
-							})}
-					</div> */}
 					<div className="movies_row">
 						{props.movies[0] &&
 							props.movies[0].Search.slice(0, 6).map(
-								(item: any, index: number) => {
+								(item: Imovie, index: number) => {
 									return (
 										<div key={index} className="movies_row__col">
 											<img src={item.Poster} />
